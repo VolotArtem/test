@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>License_test</title>
+</head>
+
+<body>
+    <form>
+        <script>
+            let p1 = 13, p2 = 22, p3 = 34, sum = 0, z = 0;
+            function selectnumber(x) {
+                sum = z;
+                sum = z * x;
+                document.getElementById("summa").innerHTML = "$"+ sum + "<sup>us</sup>";
+            }
+            function summ1() {
+                z = 13;
+                sum = 13;
+                document.getElementById("summa").innerHTML = "$"+ sum + "<sup>us</sup>";
+                document.getElementById("select").innerHTML = "Selected plan: #1";
+            }
+            function summ2() {
+                z = 22;
+                sum = 22;
+                document.getElementById("summa").innerHTML = "$"+ sum + "<sup>us</sup>";
+                document.getElementById("select").innerHTML = "Selected plan: #2";
+            }
+            function summ3() {
+                z = 34;
+                sum = 34;
+                document.getElementById("summa").innerHTML ="$"+ sum + "<sup>us</sup>";
+                document.getElementById("select").innerHTML = "Selected plan: #3";
+            }
+        </script>
+        <div class="wrapper">
+            <div class="container">
+                <div class="license">
+                    <div class="license__plans">
+                        <div class="lincense__plan1">
+                            <input type="radio" onclick="summ1()" name="LICENSE PLAN #1" value="lager1" />LICENSE PLAN
+                            #1
+
+                        </div>
+                        <div class="lincense__plan2">
+                            <input type="radio" onclick="summ2()" name="LICENSE PLAN #1" value="lager2" />LICENSE PLAN
+                            #2
+                        </div>
+                        <div class="lincense__plan3">
+                            <input type="radio" onclick="summ3()" checked name="LICENSE PLAN #1"
+                                value="lager3" />LICENSE PLAN #3
+                        </div>
+                    </div>
+                    <div class="deposit">
+                        <div class="deposit__plan1">
+                            <script type="text/javascript">
+                                document.writeln("$"+ p1 + " per license");
+                                console.log(sum);
+                            </script>
+                        </div>
+                        <div class="deposit__plan2">
+                            <script type="text/javascript">
+                                document.writeln("$"+ p2 + " per license");
+                            </script>
+                        </div>
+                        <div class="deposit__plan3">
+                            <script type="text/javascript">
+                                document.writeln("$"+ p3 + " per license");
+                            </script>
+                        </div>
+                    </div>
+                </div>
+                <form>
+                    <hr>
+                    <br>
+                    <br>
+                    <div class="number">
+                        <span class="span">Number of license</span>
+                        <select id="number" onchange="selectnumber(value)" name="number">
+                            <option selected value="1" checked>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <br>
+                    <br>
+                    <hr>
+                </form>
+                <div class="total">
+                    <b>TOTAL:</b> <a id="summa">$0<sup>us</sup></a>
+                </div>
+                <div class="button">
+                    <a href="https://google.com">BUY NOW</a>
+                </div>
+                <div class="choice">
+                    <a id="select">Selected plan: #3</a>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
